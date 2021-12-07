@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+
+<div class="col-3">
+    <form method="post">
+        <div class="mb-3">
+          <label for="Name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="Name" asp-for="MapPoint.Name">
+        </div>
+        <div class="mb-3">
+          <label for="X" class="form-label">X Point</label>
+          <input type="text" class="form-control" id="X" asp-for="MapPoint.X">
+        </div>
+        <div class="mb-3">
+          <label for="Y" class="form-label">Y Point</label>
+          <input type="text" class="form-control" id="Y" asp-for="MapPoint.Y">
+        </div>
+        <button type="submit" class="btn-light">Send</button>
+     </form>
+</div>

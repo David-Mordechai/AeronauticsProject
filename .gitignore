@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/EntitiesCreator/EntitiesCreator.Application/obj
+/EntitiesCreator/EntitiesCreator.Application/bin
+/EntitiesCreator/.vs/EntitiesCreator/v17
+/EntitiesCreator/EntitiesCreator.Domain/bin
+/EntitiesCreator/EntitiesCreator.Domain/obj
+/EntitiesCreator/EntitiesCreator.Infrastructure/bin
+/EntitiesCreator/EntitiesCreator.Infrastructure/obj
+/EntitiesCreator/EntitiesCreator.WebApp/bin
+/EntitiesCreator/EntitiesCreator.WebApp/obj

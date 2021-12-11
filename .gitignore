@@ -13,3 +13,6 @@
 /EntitiesCreator/EntitiesCreator.WebApp/obj
 EntitiesCreator/.vs/EntitiesCreator/DesignTimeBuild/.dtbcache.v2
 EntitiesCreator/.vs/EntitiesCreator/project-colors.json
+
+.fake
+.ionide

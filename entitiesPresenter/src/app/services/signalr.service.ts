@@ -7,7 +7,7 @@ import { MapPoint } from '../models/mapPoint';
 })
 export class SignalrService {
 
-    private connectionUrl = 'https://localhost:7047/mapPointHub';
+    private connectionUrl = '/mapPointHub';
     private hubConnection: HubConnection | undefined
     private _mapPoint = new ReplaySubject<MapPoint>();
     public mapPoint = this._mapPoint.asObservable();

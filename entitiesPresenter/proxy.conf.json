@@ -1,0 +1,8 @@
+{
+  "/mapPointHub/*":{
+    "target": "https://localhost:7047/",
+    "secure": false,
+    "changeOrigin": true,
+    "ws": true
+  }
+}

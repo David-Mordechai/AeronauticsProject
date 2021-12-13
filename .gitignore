@@ -16,3 +16,7 @@ EntitiesCreator/.vs/EntitiesCreator/project-colors.json
 
 .fake
 .ionide
+*.sqlite
+/.vs
+/EntitiesCreator/obj/Docker
+/entitiesPresenter/obj/Docker

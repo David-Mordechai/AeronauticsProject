@@ -8,7 +8,7 @@ services:
             context: ./entitiescreator
             dockerfile: EntitiesCreator.WebApp/Dockerfile
         ports:
-            - "5200:443"
+            - "5200:80"
     entitiespresenter1:
         container_name: entitiespresenter1
         image: entitiespresenter

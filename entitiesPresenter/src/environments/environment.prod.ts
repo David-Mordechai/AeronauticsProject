@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  connectionUrl: 'http://localhost:5200/mapPointHub'
 };

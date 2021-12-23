@@ -1,18 +1,20 @@
 import { Injectable } from '@angular/core';
 import { HubConnection, HubConnectionBuilder } from '@microsoft/signalr'
 import { ReplaySubject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { MapPoint } from '../models/mapPoint';
 @Injectable({
     providedIn: 'root'
 })
 export class SignalrService {
 
-    private connectionUrl = 'http://localhost:5200/mapPointHub';
+    constructor() {
+         
+    }
+
     private hubConnection: HubConnection | undefined
     private _mapPoint = new ReplaySubject<MapPoint>();
     public mapPoint = this._mapPoint.asObservable();
-
-    constructor() { }
 
     public connect = () => {
         this.startConnection();
@@ -21,7 +23,7 @@ export class SignalrService {
 
     private getConnection(): HubConnection {
         return new HubConnectionBuilder()
-            .withUrl(this.connectionUrl)
+            .withUrl(environment.connectionUrl)
             .withAutomaticReconnect()
             .build();
     }
